@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import Chatup from "@/public/chatup.png"
+import Litt from "@/public/litt.png"
+import Tensorboard from "@/public/tensorboard.png"
 
 export const links = [
   {
@@ -62,25 +62,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "ChatUp",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I developed the front-end of a chat application with real-time messaging functionality. I also explored parts of backend API..",
+    tags: ["React", "Python", "MySQL", "Tailwind", "Git", "Flask"],
+    imageUrl: Chatup,
   },
   {
-    title: "rmtDev",
+    title: "LITT GUI",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "I contributed extensively to LITT's frontend development at Zurich Insurance.",
+    tags: ["Vue", "Vuetify", "CSS", "Git", "Python"],
+    imageUrl: Litt,
   },
   {
-    title: "Word Analytics",
+    title: "Deep CNN",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "I challenged myself with sport detection from images. This involved deep learning models.",
+    tags: ["Python", "Keras", "Tensorflow", "pandas", "scikit-learn"],
+    imageUrl: Tensorboard,
   },
 ] as const;
 
