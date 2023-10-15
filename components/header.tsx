@@ -1,10 +1,14 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
+  const { activeSection, setActiveSection } = useActiveSectionContext();
+
   const variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: -100 },
@@ -41,14 +45,25 @@ export default function Header() {
               initial={{ y: -100, opacity: 0 }}
               animate={hidden ? "hidden" : "visible"}
               transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
-              className="flex h-3/4 items-center justify-center"
+              className="relative flex h-3/4 items-center justify-center"
               key={link.hash}
             >
               <Link
-                className="flex w-full items-center justify-center p-3 transition-colors hover:text-gray-950"
+                className={clsx(
+                  "flex w-full items-center justify-center p-3 transition-colors hover:text-gray-950",
+                  { "text-gray-950": activeSection === link.name },
+                )}
                 href={link.hash}
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
+                {link.name === activeSection && (
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    className="absolute inset-0 -z-10 rounded-full bg-gray-200"
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}
