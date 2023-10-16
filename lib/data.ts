@@ -1,6 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { FaVuejs } from "react-icons/fa";  
 import { LuGraduationCap } from "react-icons/lu";
 import Chatup from "@/public/chatup.png"
 import Litt from "@/public/litt.png"
@@ -35,28 +35,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor's Degree",
+    location: "Bratislava, Slovakia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated with a Bachelor of Computer Science from the Slovak University of Technology in Bratislava, Faculty of Informatics and Information Technologies.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021",
+  },
+  {
+    title: "ICT Support",
+    location: "Bratislava, Slovakia",
+    description:
+      "I am working as ICT Support for 3 years. I am responsible for the maintenance of the company's IT infrastructure.",
+    icon: React.createElement(HiOutlineDevicePhoneMobile),
+    date: "2020 - present",
+  },
+  {
+    title: "Master's Degree",
+    location: "Bratislava, Slovakia",
+    description:
+      "I am currently studying for a Master's degree in Computer Science at the Slovak University of Technology in Bratislava, Faculty of Informatics and Information Technologies.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - present",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Bratislava, Slovakia",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I am also now working as a front-end developer for 6 months. I worked with Vue and Vuetify library.",
+    icon: React.createElement(FaVuejs),
+    date: "2023 - present",
   },
 ] as const;
 
@@ -64,7 +72,7 @@ export const projectsData = [
   {
     title: "ChatUp",
     description:
-      "I developed the front-end of a chat application with real-time messaging functionality. I also explored parts of backend API..",
+      "Developing the front-end of a chat application with real-time messaging functionality. I also explored parts of backend API.",
     tags: ["React", "Python", "MySQL", "Tailwind", "Git", "Flask"],
     imageUrl: Chatup,
   },
@@ -94,14 +102,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "MySQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Vue",
+  "Vuetify"
 ] as const;
