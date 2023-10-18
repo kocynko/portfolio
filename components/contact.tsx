@@ -22,7 +22,7 @@ export default function Contact() {
       className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28"
     >
       <SectionHeading>Contact</SectionHeading>
-      <p className="-mt-3 text-gray-700">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a
           className="underline"
@@ -41,18 +41,18 @@ export default function Contact() {
           }
           toast.success("Email sent successfully");
         }}
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
       >
         <input
           type="email"
           name="senderEmail"
           placeholder="Your Email"
-          className="h-14 rounded-lg border border-black/10 px-4"
+          className="h-14 rounded-lg border-black/10 px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           maxLength={500}
           required
         />
         <textarea
-          className="my-3 h-52 rounded-lg border border-black/10 p-4"
+          className="my-3 h-52 rounded-lg border-black/10 p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           placeholder="Your Message"
           name="message"
           maxLength={500}
