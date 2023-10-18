@@ -83,7 +83,7 @@ export default function Intro() {
           />
         </Link>
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
+          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           href="/CV.pdf"
           download
         >
@@ -91,14 +91,14 @@ export default function Intro() {
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
         <a
-          className="border-black/10active:scale-105 flex cursor-pointer items-center rounded-full border bg-white p-4 text-gray-700 transition hover:scale-[1.15]  hover:text-gray-950 focus:scale-[1.15]"
+          className="flex cursor-pointer items-center rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15]  active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/matuskocian/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="flex cursor-pointer items-center rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="flex cursor-pointer items-center rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://github.com/kocynko"
           target="_blank"
         >
