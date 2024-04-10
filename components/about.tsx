@@ -30,7 +30,7 @@ export default function About() {
           Problem-solving in programming is my strongest suit.
         </span>{" "}
         My skill set encompasses{" "}
-        <span className="font-medium">React, Next.js, Node.js, MySQL</span>, and{" "}
+        <span className="font-medium">React, Vue, Node.js, MySQL</span>, and{" "}
         <span className="font-medium">Python</span> with frameworks such as{" "}
         <span className="font-medium">Tensorflow</span>. At present, I am
         immersed in the study of <span className="underline">TypeScript</span>,

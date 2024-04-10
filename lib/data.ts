@@ -1,10 +1,10 @@
 import React from "react";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
-import { FaVuejs } from "react-icons/fa";  
+import { FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import Chatup from "@/public/chatup.png"
-import Litt from "@/public/litt.png"
-import Tensorboard from "@/public/tensorboard.png"
+import Chatup from "@/public/chatup.png";
+import Litt from "@/public/litt.png";
+import Tensorboard from "@/public/tensorboard.png";
 
 export const links = [
   {
@@ -62,7 +62,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Bratislava, Slovakia",
     description:
-      "I am also now working as a front-end developer for 6 months. I worked with Vue and Vuetify library.",
+      "I am also now working as a front-end developer. I worked with Vue,Nuxt and Vuetify library.",
     icon: React.createElement(FaVuejs),
     date: "2023 - present",
   },
@@ -80,7 +80,7 @@ export const projectsData = [
     title: "LITT GUI",
     description:
       "I contributed extensively to LITT's frontend development at Zurich Insurance.",
-    tags: ["Vue", "Vuetify", "CSS", "Git", "Python"],
+    tags: ["Vue", "Vuetify", "CSS", "Git", "Python", "Nuxt"],
     imageUrl: Litt,
   },
   {
@@ -105,5 +105,5 @@ export const skillsData = [
   "MySQL",
   "Python",
   "Vue",
-  "Vuetify"
+  "Vuetify",
 ] as const;
