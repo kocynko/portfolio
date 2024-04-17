@@ -62,7 +62,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Bratislava, Slovakia",
     description:
-      "I am also now working as a front-end developer. I worked with Vue,Nuxt and Vuetify library.",
+      "I am also now working as a front-end developer. I worked with Vue, Nuxt and Vuetify library.",
     icon: React.createElement(FaVuejs),
     date: "2023 - present",
   },
@@ -106,4 +106,5 @@ export const skillsData = [
   "Python",
   "Vue",
   "Vuetify",
+  "Nuxt",
 ] as const;

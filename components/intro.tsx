@@ -61,7 +61,7 @@ export default function Intro() {
         <span className="font-bold">student of applied informatics</span> with
         desire to be a <span className="font-bold">frontend developer</span>. I
         enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">Vue (Nuxt.js)</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
