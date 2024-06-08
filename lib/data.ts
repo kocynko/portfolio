@@ -46,25 +46,25 @@ export const experiencesData = [
     title: "ICT Support",
     location: "Bratislava, Slovakia",
     description:
-      "I am working as ICT Support for 3 years. I am responsible for the maintenance of the company's IT infrastructure.",
+      "I was working as ICT Support for 3 years. I was responsible for the maintenance of the company's IT infrastructure.",
     icon: React.createElement(HiOutlineDevicePhoneMobile),
-    date: "2020 - present",
+    date: "2021 - 2024",
   },
   {
     title: "Master's Degree",
     location: "Bratislava, Slovakia",
     description:
-      "I am currently studying for a Master's degree in Computer Science at the Slovak University of Technology in Bratislava, Faculty of Informatics and Information Technologies.",
+      "I have completed a Master's degree in Computer Science at the Faculty of Informatics and Information Technologies, Slovak University of Technology in Bratislava.",
     icon: React.createElement(LuGraduationCap),
-    date: "2022 - present",
+    date: "2022 - 24",
   },
   {
     title: "Front-End Developer",
     location: "Bratislava, Slovakia",
     description:
-      "I am also now working as a front-end developer. I worked with Vue, Nuxt and Vuetify library.",
+      "I worked as a front-end developer. I worked with Vue, Nuxt and Vuetify library. We developed GUI for internal software made by Model Risk Management team in Zurich Insurance.",
     icon: React.createElement(FaVuejs),
-    date: "2023 - present",
+    date: "2023 - 2024",
   },
 ] as const;
 
