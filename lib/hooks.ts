@@ -9,10 +9,10 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.5) {
     threshold: threshold,
   });
   useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000)
-      setActiveSection(sectionName),
-        [inView, setActiveSection, timeOfLastClick, sectionName];
-  });
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection(sectionName);
+    }
+  }, [inView, setActiveSection, timeOfLastClick, sectionName]);
   return {
     ref,
   };

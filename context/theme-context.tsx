@@ -29,6 +29,8 @@ export default function ThemeContextProvider({
   };
 
   useEffect(() => {
+    // Hydrate the persisted/system theme on the client after the SSR "light" render.
+    /* eslint-disable react-hooks/set-state-in-effect */
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
     if (localTheme) {
       setTheme(localTheme);
@@ -39,6 +41,7 @@ export default function ThemeContextProvider({
       setTheme("dark");
       document.documentElement.classList.add("dark");
     }
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

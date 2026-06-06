@@ -47,12 +47,12 @@ export default function Contact() {
           type="email"
           name="senderEmail"
           placeholder="Your Email"
-          className="h-14 rounded-lg border-black/10 px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
+          className="h-14 rounded-lg border-black/10 px-4 transition-all dark:bg-white/80 dark:outline-hidden dark:focus:bg-white"
           maxLength={500}
           required
         />
         <textarea
-          className="my-3 h-52 rounded-lg border-black/10 p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
+          className="my-3 h-52 rounded-lg border-black/10 p-4 transition-all dark:bg-white/80 dark:outline-hidden dark:focus:bg-white"
           placeholder="Your Message"
           name="message"
           maxLength={500}

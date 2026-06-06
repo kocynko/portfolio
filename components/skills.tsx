@@ -19,7 +19,7 @@ export default function Skills() {
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-212 scroll-mt-28 text-center sm:mb-40"
       id="skills"
     >
       <SectionHeading>Skills</SectionHeading>
@@ -34,7 +34,7 @@ export default function Skills() {
             }}
             custom={index}
             key={index}
-            className="rounded-xl border border-black/[0.1] bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="rounded-xl border border-black/10 bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
           >
             {skill}
           </motion.li>

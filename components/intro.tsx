@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       id="home"
       ref={ref}
-      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
+      className="mb-28 max-w-200 scroll-mt-400 text-center sm:mb-0"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -55,12 +55,13 @@ export default function Intro() {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="sm:text-4l mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]"
+        className="sm:text-4l mb-10 mt-4 px-4 text-2xl font-medium leading-normal!"
       >
         <span className="font-bold">Hello, I'm Matus.</span> I'm a{" "}
-        <span className="font-bold">student of applied informatics</span> with
-        desire to be a <span className="font-bold">frontend developer</span>. I
-        enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="font-bold">frontend developer</span> with a Master's in
+        Computer Science. I enjoy building{" "}
+        <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="underline">React (Next.js)</span> and{" "}
         <span className="underline">Vue (Nuxt.js)</span>.
       </motion.h1>
       <motion.div
@@ -71,7 +72,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105 "
+          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-hidden transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105 "
         >
           Contact me here{" "}
           <BsArrowRight
@@ -83,7 +84,7 @@ export default function Intro() {
           />
         </Link>
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
+          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-hidden transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           href="/CV.pdf"
           download
         >
